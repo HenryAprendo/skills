@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Technologies, technologies} from './data/skills';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'skills';
+
+  listTechnologies = technologies.slice();
+
+
+
 }
