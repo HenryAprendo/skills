@@ -2,10 +2,7 @@
 
 <header class="flex justify-between items-center px-[5%] mt-5">
   <h2 class="text-slate-300 text-2xl font-semibold">My Profile</h2>
-  <div class="flex items-center gap-x-3">
-    <img class="w-10 h-10" src="./../assets/icons/linkedin_social_icon.png" alt="icon linkedin">
-    <img class="w-12 h-12" src="./../assets/icons/github_icon.png" alt="icon github">
-  </div>
+  <app-social/>
 </header>
 <main class="mt-5 px-[5%] text-slate-300">
 
@@ -21,7 +18,7 @@
   <!-- seccion de habilidades -->
   <section class="border-b py-10">
     <ul class="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-4 md:space-y-0">
-      <li class="text-center space-y-2" *ngFor="let item of technologiesList">
+      <li class="text-center space-y-2 hover:scale-105" *ngFor="let item of technologiesList">
         <h2 class="text-slate-200 font-semibold text-3xl tracking-widest">{{item.title}}</h2>
         <p class="text-slate-500 text-base">{{item.experience}}</p>
       </li>
@@ -29,7 +26,7 @@
   </section>
 
   <section class="py-10">
-    <h2 class="text-3xl font-semibold mb-5">Projects</h2>
+    <h2 class="text-3xl font-semibold mb-8">Projects</h2>
     <ul class="grid grid-cols-1 items-center justify-items-center gap-y-8 md:grid-cols-2 lg:grid-cols-3">
       <li *ngFor="let item of projectList">
         <article class="max-w-md text-slate-200 h-[400px] md:max-w-xs">
@@ -41,7 +38,7 @@
             <ul class="text-slate-400 text-base uppercase flex flex-wrap gap-x-5 my-5">
               <li *ngFor="let skill of item.skills">{{skill}}</li>
             </ul>
-            <a [href]="item.url" target="_blank" class="font-bold text-slate-400 border-b border-b-slate-200" >See live project</a>
+            <a [href]="item.url" target="_blank" class="font-bold text-slate-400 border-b border-b-slate-200 hover:text-slate-200 hover:cursor-pointer" >See live project</a>
           </div>
         </article>
       </li>
@@ -49,6 +46,13 @@
   </section>
 
 </main>
+
+<footer class="px-[5%] text-base text-slate-400 text-center h-16 py-4">
+  <div class="flex items-center justify-center gap-x-12">
+    <h3>Designed by Henry Salazar <strong>Front-end Developer junior</strong></h3>
+    <app-social/>
+  </div>
+</footer>
 
 
 
