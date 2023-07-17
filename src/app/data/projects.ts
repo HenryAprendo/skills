@@ -19,7 +19,7 @@ export const projects:Projects[] = [
     id: 7,
     title: 'Countries world',
     skills: ['Angular','Tailwindcss','Html','Git','Mobile first'],
-    url: 'falta',
+    url: 'https://countries-world-921d1.web.app',
     image: './../../assets/images/country.jpg'
   },
   {
@@ -33,7 +33,7 @@ export const projects:Projects[] = [
     id: 5,
     title: 'Todo app',
     skills: ['React','CSS','HTML','Git','Mobile first'],
-    url: 'todoapp',
+    url: 'https://todo-app-fa1dc.web.app',
     image: './../../assets/images/todo-react.jpg'
   },
   {
