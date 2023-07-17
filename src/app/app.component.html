@@ -19,12 +19,43 @@
   <!-- seccion de habilidades -->
   <section class="border-b py-10">
     <ul class="space-y-6 grid col-span-1">
-      <li class="text-center space-y-2" *ngFor="let item of listTechnologies">
+      <li class="text-center space-y-2" *ngFor="let item of technologiesList">
         <h2 class="text-slate-200 font-semibold text-3xl tracking-widest">{{item.title}}</h2>
         <p class="text-slate-500 text-base">{{item.experience}}</p>
       </li>
     </ul>
   </section>
 
+  <section class="py-10">
+    <h2>Projects</h2>
+    <ul>
+      <li *ngFor="let item of projectList">
+        <article>
+          <img [src]="item.image" [alt]="item.title">
+          <div>
+            <h2>{{item.title}}</h2>
+            <ul>
+              <li *ngFor="let skill of item.skills">{{skill}}</li>
+            </ul>
+            <a href="">{{item.url}}</a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 

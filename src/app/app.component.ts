@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Technologies, technologies} from './data/skills';
-
+import { Projects, projects } from './data/projects';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,8 +12,8 @@ import { Technologies, technologies} from './data/skills';
 })
 export class AppComponent {
 
-  listTechnologies = technologies.slice();
+  technologiesList = technologies.slice();
 
-
+  projectList = projects.slice();
 
 }
