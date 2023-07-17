@@ -10,15 +10,17 @@
 <main class="mt-5 px-[5%] text-slate-300">
 
   <!-- seccion de presentacion -->
-  <section class="flex flex-col items-center text-center space-y-9 py-10 border-b">
-    <img class="max-w-xs rounded-lg brightness-75 " src="./../assets/images/photo-smalljpg.jpg" alt="photo profile">
-    <h1 class="text-4xl font-semibold text-slate-200">Hi, I'm Henry and it's a pleasure to show you my portfolio.</h1>
-    <p class="text-base leading-7">I am a front-end developer, passionate about creating applications that impact people's lives, using today's web technologies and learning new things every day.</p>
+  <section class="flex flex-col items-center justify-center py-10 border-b">
+    <div class="flex flex-col items-center justify-center text-center space-y-9 max-w-lg">
+      <img class="max-w-xs rounded-lg brightness-75 " src="./../assets/images/photo-smalljpg.jpg" alt="photo profile">
+      <h1 class="text-4xl font-semibold text-slate-200">Hi, I'm Henry and it's a pleasure to show you my portfolio.</h1>
+      <p class="text-base leading-7">I am a front-end developer, passionate about creating applications that impact people's lives, using today's web technologies and learning new things every day.</p>
+    </div>
   </section>
 
   <!-- seccion de habilidades -->
   <section class="border-b py-10">
-    <ul class="space-y-6 grid col-span-1">
+    <ul class="space-y-6 grid grid-cols-1">
       <li class="text-center space-y-2" *ngFor="let item of technologiesList">
         <h2 class="text-slate-200 font-semibold text-3xl tracking-widest">{{item.title}}</h2>
         <p class="text-slate-500 text-base">{{item.experience}}</p>
@@ -27,17 +29,17 @@
   </section>
 
   <section class="py-10">
-    <h2>Projects</h2>
-    <ul>
-      <li *ngFor="let item of projectList">
-        <article>
-          <img [src]="item.image" [alt]="item.title">
-          <div>
-            <h2>{{item.title}}</h2>
-            <ul>
+    <h2 class="text-3xl font-semibold mb-5">Projects</h2>
+    <ul class="grid grid-cols-1 items-center justify-items-center">
+      <li class="mb-8" *ngFor="let item of projectList">
+        <article class="max-w-md text-slate-200">
+          <img class="w-full h-full" [src]="item.image" [alt]="item.title">
+          <div class="mt-4">
+            <h2 class="text-2xl">{{item.title}}</h2>
+            <ul class="text-slate-400 text-base uppercase flex flex-wrap gap-x-5 my-5">
               <li *ngFor="let skill of item.skills">{{skill}}</li>
             </ul>
-            <a href="">{{item.url}}</a>
+            <a [href]="item.url" target="_blank" class="font-bold text-slate-400 border-b border-b-slate-200" >See live project</a>
           </div>
         </article>
       </li>

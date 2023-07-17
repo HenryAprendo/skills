@@ -31,7 +31,7 @@ export const projects:Projects[] = [
   },
   {
     id: 5,
-    title: 'Todo App',
+    title: 'Todo app',
     skills: ['React','CSS','HTML','Git','Mobile first'],
     url: 'todoapp',
     image: './../../assets/images/todo-react.jpg'
