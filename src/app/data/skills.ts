@@ -14,11 +14,11 @@ export const technologies:Technologies[] = [
   {
     id: 1,
     title: 'Typescript',
-    experience: '1 year'
+    experience: '1.3 year'
   },  {
     id: 2,
     title: 'Angular',
-    experience: '1 year'
+    experience: '1.3 year'
   },  {
     id: 3,
     title: 'React',
@@ -34,11 +34,16 @@ export const technologies:Technologies[] = [
   },  {
     id: 6,
     title: 'TailwindCss',
-    experience: '6 months'
+    experience: '9 months'
   },
   {
     id: 7,
     title: 'Mobile first',
     experience: '1 years'
+  },
+  {
+    id: 8,
+    title: 'Java + springboot (fundamentals)',
+    experience: '6 month'
   }
 ];
