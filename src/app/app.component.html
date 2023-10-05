@@ -20,7 +20,7 @@
     <ul class="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-4 md:space-y-0">
       <li class="text-center space-y-2 hover:scale-105" *ngFor="let item of technologiesList">
         <h2 class="text-slate-200 font-semibold text-3xl tracking-widest">{{item.title}}</h2>
-        <p class="text-slate-500 text-base">{{item.experience}}</p>
+        <p class="text-slate-500 text-base">{{calculateDateDifference(item.date)}}</p>
       </li>
     </ul>
   </section>
