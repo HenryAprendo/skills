@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { Technologies, technologies} from './data/skills';
 import { Projects, projects } from './data/projects';
 import { SocialComponent } from './components/social/social.component';
-import {intervalToDuration, differenceInCalendarYears, differenceInCalendarMonths, differenceInYears } from 'date-fns'
+import {intervalToDuration } from 'date-fns'
 
 
 @Component({

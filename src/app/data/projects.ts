@@ -9,6 +9,13 @@ export interface Projects {
 
 export const projects:Projects[] = [
   {
+    id: 9,
+    title: 'Multi landing page',
+    skills: ['Angular','Tailwindcss','Html','Git','Mobile first'],
+    url: 'https://henryaprendo.github.io/multi-landing-page/loopStudios',
+    image: './assets/images/multi-landing-page.jpg'
+  },
+  {
     id: 8,
     title: 'Formulary multi step',
     skills: ['Angular','Tailwindcss','Html','Git','Mobile first'],
